@@ -1,14 +1,15 @@
-import { useState } from 'react';
-import { Hero } from './components/Hero';
-import { heroapi } from './data/data.js';
+import React from 'react';
+import { Hero, Sales } from './components';
+import { heroapi, popularsales, topratedsales } from './data/data.js';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <main>
+      <main className='flex flex-col gap-16 relative'>
         <Hero heroapi={heroapi} />
+        <Sales endpoint={popularsales} ifExists />
+        <Sales endpoint={topratedsales} />
       </main>
     </>
   )
