@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import { Hero } from './components/Hero';
 import { heroapi } from './data/data.js';
 
