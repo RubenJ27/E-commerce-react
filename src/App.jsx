@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Hero, Sales, FlexContent, Stories, Footer  } from './components';
+import { Navbar, Hero, Sales, FlexContent, Stories, Footer, Card  } from './components';
 import { heroapi, popularsales, topratedsales, highlight, sneaker, story, footerAPI } from './data/data.js';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
       <main className='flex flex-col gap-16 relative'>
         <Navbar />
+        <Card />
         <Hero heroapi={heroapi} />
         <Sales endpoint={popularsales} ifExists />
         <FlexContent endpoint={highlight} ifExists />
