@@ -6,4 +6,4 @@ Este es un ecommerce para venta de zapatos desarrollado con react js
  
 
 
- [Link Ecommerce](https://api-heroes.netlify.app/)  🡸🡸😎
+ [Link Ecommerce](https://e-commerce-shop-shoes.netlify.app/)  🡸🡸😎
